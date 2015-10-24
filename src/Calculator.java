@@ -14,13 +14,17 @@ import static java.lang.Math.pow;
 public class Calculator extends javax.swing.JFrame {
 
 //Variables
+   private double total1=0.0;
+   private double total2=0.0;
+   private char math_operator;
+   
   
    //to check for buttons clicks
     /**
      * Creates new form Calculator
      */
     public Calculator() {
-       
+       this.total2=0.0;
         initComponents();
     }
 
@@ -387,7 +391,13 @@ public class Calculator extends javax.swing.JFrame {
     }//GEN-LAST:event_plusActionPerformed
 
     private void equalsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equalsActionPerformed
-        
+        switch (math_operator){
+            case '/':
+                total2 = total1 / Double.parseDouble (display.getText());
+                break;
+        }
+        display.setText(Double.toString(total2));
+        total1=0;
     }//GEN-LAST:event_equalsActionPerformed
 
     private void minusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minusActionPerformed
@@ -395,7 +405,8 @@ public class Calculator extends javax.swing.JFrame {
     }//GEN-LAST:event_minusActionPerformed
 
     private void divideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divideActionPerformed
-        
+        String button_text=divide.getText();
+        getOperator(button_text);
     }//GEN-LAST:event_divideActionPerformed
 
     private void multipyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_multipyActionPerformed
@@ -412,7 +423,11 @@ public class Calculator extends javax.swing.JFrame {
         
         display.setText(Double.toString(pow(tempNum,2)));
     }//GEN-LAST:event_squareActionPerformed
-
+    private void getOperator(String btnText){
+        math_operator = btnText.charAt(0);
+        total1 = total1 + Double.parseDouble(display.getText());
+        display.setText("");
+    }
     /**
      * @param args the command line arguments
      */
