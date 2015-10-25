@@ -1,5 +1,6 @@
 
 import static java.lang.Math.pow;
+import static java.lang.Math.sqrt;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -58,6 +59,7 @@ public class Calculator extends javax.swing.JFrame {
         multipy = new javax.swing.JButton();
         posneg = new javax.swing.JButton();
         square = new javax.swing.JButton();
+        SqRoot = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Αριθμομηχανή");
@@ -224,6 +226,13 @@ public class Calculator extends javax.swing.JFrame {
             }
         });
 
+        SqRoot.setText("SquareRoot");
+        SqRoot.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SqRootActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -271,9 +280,12 @@ public class Calculator extends javax.swing.JFrame {
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(multipy, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(divide, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(minus, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(0, 0, Short.MAX_VALUE))))))
+                                            .addComponent(divide, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(0, 0, Short.MAX_VALUE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(minus, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(SqRoot, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
                     .addComponent(display))
                 .addContainerGap())
         );
@@ -294,8 +306,9 @@ public class Calculator extends javax.swing.JFrame {
                     .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(minus, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SqRoot))
+                .addGap(42, 42, 42)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -427,6 +440,14 @@ public class Calculator extends javax.swing.JFrame {
         
         display.setText(Double.toString(pow(tempNum,2)));
     }//GEN-LAST:event_squareActionPerformed
+
+    private void SqRootActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SqRootActionPerformed
+        // TODO add your handling code here:
+         double tempNum;
+        tempNum = Double.parseDouble(display.getText());
+        
+        display.setText(Double.toString(sqrt(tempNum))); //euresi rizas
+    }//GEN-LAST:event_SqRootActionPerformed
     private void getOperator(String btnText){
         math_operator = btnText.charAt(0);
         total1 = total1 + Double.parseDouble(display.getText());
@@ -468,6 +489,7 @@ public class Calculator extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton SqRoot;
     private javax.swing.JButton clear;
     private javax.swing.JButton decimal;
     private javax.swing.JTextField display;
