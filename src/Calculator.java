@@ -12,7 +12,7 @@ import static java.lang.Math.pow;
  * @author user
  */
 public class Calculator extends javax.swing.JFrame {
-
+//blabla
 //Variables
    private double total1=0.0;
    private double total2=0.0;
