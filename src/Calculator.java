@@ -446,7 +446,7 @@ public class Calculator extends javax.swing.JFrame {
          double tempNum;
         tempNum = Double.parseDouble(display.getText());
         
-        display.setText(Double.toString(sqrt(tempNum)));
+        display.setText(Double.toString(sqrt(tempNum))); //euresi rizas
     }//GEN-LAST:event_SqRootActionPerformed
     private void getOperator(String btnText){
         math_operator = btnText.charAt(0);
