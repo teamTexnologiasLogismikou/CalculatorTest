@@ -420,7 +420,7 @@ public class Calculator extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_posnegActionPerformed
-
+    
     private void squareActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_squareActionPerformed
         double tempNum;
         tempNum = Double.parseDouble(display.getText());
