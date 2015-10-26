@@ -106,9 +106,13 @@
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Component id="multipy" min="-2" pref="47" max="-2" attributes="0"/>
                                               <Component id="divide" min="-2" pref="47" max="-2" attributes="0"/>
-                                              <Component id="minus" alignment="0" min="-2" pref="47" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="minus" min="-2" pref="47" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="SqRoot" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -139,8 +143,9 @@
                       <Component id="jButton10" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                       <Component id="minus" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                       <Component id="jButton6" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="SqRoot" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jButton5" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                       <Component id="jButton8" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
@@ -383,6 +388,14 @@
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="squareActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="SqRoot">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="SquareRoot"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SqRootActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
