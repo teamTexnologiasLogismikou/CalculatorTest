@@ -330,10 +330,10 @@ public class Calculator extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jMenu1.setText("File");
+        jMenu1.setText("Επεξεργασία");
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Edit");
+        jMenu2.setText("Βοήθεια");
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
