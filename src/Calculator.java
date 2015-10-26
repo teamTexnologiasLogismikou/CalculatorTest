@@ -17,6 +17,8 @@ public class Calculator extends javax.swing.JFrame {
 //Variables
    private double total1=0.0;
    private double total2=0.0;
+   private double total3=0.0;
+   
    private char math_operator;
    
   
@@ -60,6 +62,12 @@ public class Calculator extends javax.swing.JFrame {
         posneg = new javax.swing.JButton();
         square = new javax.swing.JButton();
         SqRoot = new javax.swing.JButton();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+        jMenuItem3 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Αριθμομηχανή");
@@ -327,6 +335,40 @@ public class Calculator extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jMenu1.setText("Επεξεργασία");
+
+        jMenuItem1.setText("Αντιγραφή");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem1);
+
+        jMenuItem2.setText("Επικόλληση");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem2);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Βοήθεια");
+
+        jMenuItem3.setText("Πληροφορίες");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem3);
+
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -401,7 +443,8 @@ public class Calculator extends javax.swing.JFrame {
     }//GEN-LAST:event_decimalActionPerformed
 
     private void plusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plusActionPerformed
-      
+String button_text=plus.getText();
+        getOperator(button_text);      
     }//GEN-LAST:event_plusActionPerformed
 
     private void equalsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equalsActionPerformed
@@ -411,6 +454,9 @@ public class Calculator extends javax.swing.JFrame {
                 break;
             case '-':
                 total2 = total1 - Double.parseDouble (display.getText());
+                break;
+                case '+':
+                total2 = total1 + Double.parseDouble (display.getText());
                 break;
         }
         display.setText(Double.toString(total2));
@@ -453,6 +499,19 @@ public class Calculator extends javax.swing.JFrame {
         
         display.setText(Double.toString(sqrt(tempNum))); //euresi rizas
     }//GEN-LAST:event_SqRootActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+About s = new About(); 
+s.setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+total3 = Double.parseDouble(display.getText());        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+display.setText(String.valueOf(total3));         // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
     private void getOperator(String btnText){
         math_operator = btnText.charAt(0);
         total1 = total1 + Double.parseDouble(display.getText());
@@ -510,6 +569,12 @@ public class Calculator extends javax.swing.JFrame {
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton minus;
     private javax.swing.JButton multipy;
