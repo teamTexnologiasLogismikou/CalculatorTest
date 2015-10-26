@@ -345,6 +345,7 @@ public class Calculator extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void displayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_displayActionPerformed
@@ -408,13 +409,17 @@ public class Calculator extends javax.swing.JFrame {
             case '/':
                 total2 = total1 / Double.parseDouble (display.getText());
                 break;
+            case '-':
+                total2 = total1 - Double.parseDouble (display.getText());
+                break;
         }
         display.setText(Double.toString(total2));
         total1=0;
     }//GEN-LAST:event_equalsActionPerformed
 
     private void minusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minusActionPerformed
-        
+        String button_text=minus.getText();
+        getOperator(button_text);        
     }//GEN-LAST:event_minusActionPerformed
 
     private void divideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divideActionPerformed
