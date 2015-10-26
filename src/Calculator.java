@@ -443,7 +443,8 @@ public class Calculator extends javax.swing.JFrame {
     }//GEN-LAST:event_decimalActionPerformed
 
     private void plusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plusActionPerformed
-      
+String button_text=plus.getText();
+        getOperator(button_text);      
     }//GEN-LAST:event_plusActionPerformed
 
     private void equalsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equalsActionPerformed
@@ -453,6 +454,9 @@ public class Calculator extends javax.swing.JFrame {
                 break;
             case '-':
                 total2 = total1 - Double.parseDouble (display.getText());
+                break;
+                case '+':
+                total2 = total1 + Double.parseDouble (display.getText());
                 break;
         }
         display.setText(Double.toString(total2));
