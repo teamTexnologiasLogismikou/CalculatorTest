@@ -4,6 +4,32 @@
   <NonVisualComponents>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
       <SubComponents>
+        <Menu class="javax.swing.JMenu" name="jMenu3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x3a0;&#x3c1;&#x3bf;&#x3b2;&#x3bf;&#x3bb;&#x3ae;"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="jRadioButtonMenuItem1">
+              <Properties>
+                <Property name="selected" type="boolean" value="true"/>
+                <Property name="text" type="java.lang.String" value="&#x3a4;&#x3c5;&#x3c0;&#x3b9;&#x3ba;&#x3ae;"/>
+                <Property name="toolTipText" type="java.lang.String" value=""/>
+                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                  <Color id="Default Cursor"/>
+                </Property>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="jRadioButtonMenuItem2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&#x395;&#x3c0;&#x3b9;&#x3c3;&#x3c4;&#x3b7;&#x3bc;&#x3bf;&#x3bd;&#x3b9;&#x3ba;&#x3ae;"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButtonMenuItem2ActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu1">
           <Properties>
             <Property name="text" type="java.lang.String" value="&#x395;&#x3c0;&#x3b5;&#x3be;&#x3b5;&#x3c1;&#x3b3;&#x3b1;&#x3c3;&#x3af;&#x3b1;"/>
@@ -69,10 +95,10 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+          <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -81,7 +107,7 @@
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -99,69 +125,69 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="display" max="32767" attributes="0"/>
                       <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="clear" alignment="1" min="-2" pref="47" max="-2" attributes="0"/>
-                                      <Component id="jButton11" min="-2" pref="47" max="-2" attributes="0"/>
-                                      <Component id="jButton2" min="-2" pref="47" max="-2" attributes="0"/>
-                                      <Component id="jButton6" min="-2" pref="47" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jButton6" min="-2" pref="47" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jButton3" min="-2" pref="47" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jButton10" min="-2" pref="47" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="minus" min="-2" pref="47" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="jButton15" max="32767" attributes="0"/>
+                                      <Component id="jButton11" pref="47" max="32767" attributes="0"/>
                                   </Group>
-                                  <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="decimal" max="32767" attributes="0"/>
+                                      <Component id="jButton5" pref="47" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="jButton8" min="-2" pref="47" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="plus" min="-2" pref="47" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="equals" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="clear" min="-2" pref="47" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="back" min="-2" pref="47" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="posneg" min="-2" pref="47" max="-2" attributes="0"/>
+                                      </Group>
                                       <Group type="102" alignment="0" attributes="0">
+                                          <Component id="jButton2" min="-2" pref="47" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
                                           <Component id="jButton1" min="-2" pref="47" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="jButton9" min="-2" pref="47" max="-2" attributes="0"/>
                                       </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jButton3" min="-2" pref="47" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jButton10" min="-2" pref="47" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jButton5" min="-2" pref="47" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jButton8" min="-2" pref="47" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jButton15" min="-2" pref="47" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="decimal" min="-2" pref="47" max="-2" attributes="0"/>
-                                      </Group>
                                   </Group>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="plus" alignment="0" min="-2" pref="47" max="-2" attributes="0"/>
                                       <Component id="multipy" min="-2" pref="47" max="-2" attributes="0"/>
                                       <Component id="divide" min="-2" pref="47" max="-2" attributes="0"/>
-                                      <Component id="minus" alignment="0" min="-2" pref="47" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="posneg" min="-2" pref="104" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="equals" min="-2" pref="113" max="-2" attributes="0"/>
-                              </Group>
                           </Group>
-                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="display" max="32767" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="SqRoot" max="32767" attributes="0"/>
-                      <Component id="square" max="32767" attributes="0"/>
-                      <Component id="back" max="32767" attributes="0"/>
-                  </Group>
-                  <EmptySpace pref="20" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -169,51 +195,42 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Component id="display" min="-2" pref="39" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jButton1" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                              <Component id="jButton9" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                              <Component id="jButton2" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                              <Component id="plus" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
-                          <Component id="square" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                  <Component id="display" min="-2" pref="44" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="clear" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="back" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="posneg" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="divide" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jButton9" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="jButton1" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="jButton2" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="multipy" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jButton6" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                       <Component id="jButton3" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                       <Component id="jButton10" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                       <Component id="minus" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                      <Component id="jButton6" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                      <Component id="SqRoot" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jButton11" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                       <Component id="jButton5" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                       <Component id="jButton8" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                      <Component id="jButton11" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                      <Component id="multipy" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                      <Component id="back" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="plus" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="clear" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                      <Component id="decimal" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                      <Component id="divide" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                       <Component id="jButton15" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="posneg" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="decimal" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                       <Component id="equals" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="17" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -224,6 +241,10 @@
             <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial" size="12" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Default Cursor"/>
             </Property>
           </Properties>
           <Events>
@@ -420,7 +441,7 @@
         <Component class="javax.swing.JButton" name="posneg">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="14" style="1"/>
+              <Font name="Arial" size="12" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="+/-"/>
           </Properties>
@@ -428,34 +449,13 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="posnegActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="square">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="14" style="1"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="x^2"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="squareActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="SqRoot">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="14" style="1"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="sqrt(x)"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SqRootActionPerformed"/>
-          </Events>
-        </Component>
         <Component class="javax.swing.JButton" name="back">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial" size="12" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Backspace"/>
+            <Property name="text" type="java.lang.String" value="&lt;--"/>
+            <Property name="actionCommand" type="java.lang.String" value=""/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backActionPerformed"/>
