@@ -141,14 +141,6 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="decimal" min="-2" pref="47" max="-2" attributes="0"/>
-                                      <Component id="jButton5" alignment="1" min="-2" pref="47" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="equals" min="-2" pref="100" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                       <Component id="jButton1" min="-2" pref="47" max="-2" attributes="0"/>
                                       <Component id="back" min="-2" pref="47" max="-2" attributes="0"/>
@@ -173,21 +165,39 @@
                                   </Group>
                                   <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jButton3" min="-2" pref="47" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <Component id="jButton8" min="-2" pref="47" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="decimal" min="-2" pref="47" max="-2" attributes="0"/>
+                                              <Component id="jButton5" alignment="1" min="-2" pref="47" max="-2" attributes="0"/>
+                                          </Group>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="plus" min="-2" pref="47" max="-2" attributes="0"/>
+                                          <Component id="equals" min="-2" pref="100" max="-2" attributes="0"/>
                                       </Group>
-                                      <Group type="102" attributes="0">
-                                          <Component id="jButton10" min="-2" pref="47" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="jButton3" min="-2" pref="47" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="minus" min="-2" pref="47" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <Component id="jButton8" min="-2" pref="47" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="plus" min="-2" pref="47" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <Component id="jButton10" min="-2" pref="47" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="minus" min="-2" pref="47" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="sin" min="-2" pref="79" max="-2" attributes="0"/>
+                                              <Component id="cos" min="-2" pref="79" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
                                   </Group>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
@@ -229,6 +239,7 @@
                       <Component id="jButton10" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                       <Component id="minus" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                       <Component id="jButton6" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="sin" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -236,6 +247,7 @@
                       <Component id="jButton8" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                       <Component id="jButton11" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                       <Component id="plus" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="cos" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -490,6 +502,28 @@
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="sin">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arial" size="14" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="sin(x)"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sinActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="cos">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arial" size="14" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="cos(x)"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cosActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
