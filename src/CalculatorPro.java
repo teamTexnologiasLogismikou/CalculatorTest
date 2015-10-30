@@ -501,7 +501,8 @@ dispose();         // TODO add your handling code here:
     }//GEN-LAST:event_posnegActionPerformed
 
     private void multipyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_multipyActionPerformed
-
+        String button_text=multipy.getText();
+        getOperator(button_text);
     }//GEN-LAST:event_multipyActionPerformed
 
     private void equalsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equalsActionPerformed
@@ -515,6 +516,9 @@ dispose();         // TODO add your handling code here:
             case '+':
             total2 = total1 + Double.parseDouble (display.getText());
             break;
+            case '*':
+            total2 = total1 * Double.parseDouble (display.getText());
+            break; 
         }
         display.setText(Double.toString(total2));
         total1=0;
