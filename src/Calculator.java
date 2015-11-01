@@ -469,7 +469,7 @@ public class Calculator extends javax.swing.JFrame {
                 total2 = total1 / Double.parseDouble (display.getText());
                 break;
             case '*':
-                total2 = total1 + Double.parseDouble (display.getText());
+                total2 = total1 * Double.parseDouble (display.getText());
                 break;
             case '-':
                 total2 = total1 - Double.parseDouble (display.getText());
